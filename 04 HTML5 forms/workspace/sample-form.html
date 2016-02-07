@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <title> </title>
-</head>
-
-<body>
-    <form action="http://www.google.com/search">
-        <div>
-            Let's search Google:
-            <input required name="q" />
-            <input type="submit" />
-        </div>
-    </form>
-</body>
-
-</html>
+    <head>
+        <title> </title>
+    </head>
+    <body>
+       <form action="http://www.google.com/search">
+      <div>
+       Let's search Google:
+        <input name="q">
+        <input type="submit"> 
+        <input type="hidden" name="org" value="Acme" />
+      </div>
+     <select name="example"> 
+     <option value="notknown">Not selected</option>
+     <option value="item1">Item 1</option> 
+     </select>
+    <input type="reset" value="Reset everything!" />
+     </form>
+    </body>
+</html
