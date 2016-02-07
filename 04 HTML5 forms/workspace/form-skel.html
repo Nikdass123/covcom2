@@ -11,20 +11,21 @@
 	<body>
 		<h1>Turnitin</h1>
 		<form  lang="fi" action="">
+			<fieldset><legend>Student Information</legend>
 			<div>
-				Name: <input type="text" name="studentname"/>
+				Name: <input type="text" name="studentname" placeholder="Full name"/>
 			</div>
 			<div>
-				Student id: <input type="text" name="id"  />
+				Student id: <input type="text" name="id" placeholder="Id Number"  />
 			</div>
 			<div>
-				Email: <input type="text" name="email"/>
+				Email: <input type="text" name="email" placeholder="Your email address"/>
 				<!--
 				Make an input named "email"
 				-->
 			</div>
 			<div>
-				Assignment: <input type="text" name="assignment"/>
+				Assignment: <input type="text" name="assignment" placeholder="Assignment name"/>
 				<!--
 				Make an input named "assignment"
 				-->
@@ -32,32 +33,41 @@
 			</div>
 
 			<div>
-				Code: <input type="text" name="code"/>
+				Code: <input type="text" name="code" placeholder="Student code"/>
 				<!--
 				Make an input named "code" which is a text area to put student's code into.
 				-->
 				
 			</div>
 			<div>
-				Cheat: <input type="text" name="cheat"/>
+				Cheat: <input type="checkbox" name="cheat"/>
 			<!--
 				Make an input named "cheat" which is a check box the student must check.
 			-->
 			</div>
 			<div>
-				Pay: <input type="text" name="payment"/>
-			<!--
-				Make an input named "payment" which is a radio box with possible values of visa, paypal, mastercard
-			-->
-			</div>
-			<div>
-				Score: <input type="text" name="score"/>
+				Score: <input type="text" name="score" placeholder="List of choices for the score"/>
 			<!--
 				Make an input named "score" which is a list of choices for the score 
 			-->
-			</div>
-			<input type="submit" /><input type="reset" value="Reset everything!" />
+			</div></fieldset>
+			
+			<fieldset><legend>Payment Option</legend>
+			<div>Pay: <input type="radio" name="payment" value="visa"/>Visa 
+                      <input type="radio" name="payment" value="paypal"/>Paypal
+				      <input type="radio" name="payment" value="mastercard"/>Mastercard
+				     
+			<!--
+				Make an input named "payment" which is a radio box with possible values of visa, paypal, mastercard
+			-->
+			</div></fieldset>
+			
+			<div><fieldset><legend>Personal Belongings</legend>
+		     	<input type="checkbox" name="bike" id="bike" value="Bike"><label for="bike">I have a bike</label><br>
+                <input type="checkbox" name="car" id="car" value="Car"><label for="car">I have a car </label>
+            </div></fieldset>
+            <div>
+            	<input type="submit" /><input type="reset" value="Reset everything!" /><a href="http://jigsaw.w3.org/css-validator/check/referer">Validate</a>
 		</form>
-		<a href="http://jigsaw.w3.org/css-validator/check/referer">Validate</a>
 	</body>
 </html>
