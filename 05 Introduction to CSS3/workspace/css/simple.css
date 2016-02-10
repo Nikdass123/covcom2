@@ -1,9 +1,50 @@
 body {
-    font-family: Arial, Verdana, sans-serif;
+    font-family: Arial bold, calibri, sans-serif;
+    text-indent: 20px;
+    background-color: grey;
 }
+
+figcaption {
+          font-size: 0.9em;
+          font-style: normal;
+}
+
+
+.copyright-notice {
+      font-size: 1.3em;
+}
+
+.info-urgent {
+    font-size: 1.5em;
+}
+
+#special {
+    font-size: 0.8em;
+    color: blue;
+    font-style: normal;
+    border-left: 10px solid black;
+    margin-left: 1.2px;
+    padding-left: 1.2px;
+}
+
 
 h1,
 h2 {
-    color: blue;
+    color: black;
     font-weight: bold;
+    font-size: 1.3em;
+    
+    ;
+}
+
+.one { 
+     border: 2px solid;
+     border-width: 2px;
+     text-indent: 10px;
+}
+
+.two {
+     border: 3px solid;
+     border-width: 2px;
+     text-indent: 20px
 }

@@ -10,10 +10,13 @@ h1.alert {
     font-size: 3em;
 }
 
+
+
 .alert {
     color: red;
+    text-decoration:underline;
 }
 
-p#unique {
+#unique {
     font-size: 0.8em;
 }
