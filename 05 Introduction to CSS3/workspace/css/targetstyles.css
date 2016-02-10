@@ -1,3 +1,22 @@
 body {
     font-family: Arial, Verdana, sans-serif;
 }
+
+ol > li {
+    color: green;
+}
+
+ul li ul {
+    font-weight: bold;
+}
+
+ul li ul li ul {
+    color: blue;
+}
+
+input[type="text"] {
+    color : blue;
+}
+input[type="submit"] {
+    font-weight : bold;
+}

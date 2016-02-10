@@ -14,9 +14,16 @@ figcaption {
       font-size: 1.3em;
 }
 
-.info-urgent {
-    font-size: 1.5em;
+
+
+p::before {
+    content: "Note!"
 }
+
+img::after{
+    content: 'tickmark';
+}
+
 
 #special {
     font-size: 0.8em;
