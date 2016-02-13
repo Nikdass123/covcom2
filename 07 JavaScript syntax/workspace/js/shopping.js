@@ -8,15 +8,13 @@ function calculate() {
 
 	// For storing the order total:
 	var total;
-	
-	
 
 	// Get references to the form values:
-	var quantity= parseFloat('quantity').value;
+	var quantity = document.getElementById('quantity').value;
 	var price = document.getElementById('price').value;
 	var tax = document.getElementById('tax').value;
 	var discount = document.getElementById('discount').value;
-    
+
 	// Add validation here later!
 
 	// Calculate the initial total:
