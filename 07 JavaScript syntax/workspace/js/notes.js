@@ -1,10 +1,10 @@
 
 var notes = new Array();
-
+"use strict";
 function addItem() {
-	textbox = document.getElementById('item');
+	var textbox = document.getElementById('item');
 	var itemText = textbox.value;
-	textbox.value = '';
+    textbox.value = '';
 	textbox.focus();
 	var newItem = {title: itemText, quantity: 1};
 	notes.push(newItem);
