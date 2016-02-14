@@ -10,13 +10,17 @@ function process() {
     var okay = true;
 
     // Get form references:
+    var full name = document.getElementById('Full Name')
     var email = document.getElementById('email');
     var comments = document.getElementById('comments');
+    
     // Validate the email address:
     if (!email || !email.value || (email.value.length < 6) || (email.value.indexOf('@') == -1)) {
         okay = false;
         alert('Please enter a valid email address!');
     }
+    
+    if ()
 
     // Validate the comments:
     var maxLength = 100;
