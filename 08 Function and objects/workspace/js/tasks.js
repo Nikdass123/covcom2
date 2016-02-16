@@ -44,3 +44,27 @@ function init() {
     document.getElementById('theForm').onsubmit = addTask;
 } // End of init() function.
 window.onload = init;
+
+<script>
+a=[2,5,5,7,7,9];
+b= [];
+
+for (var i=0; 1<a.length; i++){
+console.log('orginal was '+ a);
+element = a[i];
+console.log('this element ' + element;
+
+do{
+index = a.indexof(element);
+a[index] = null;
+console.log('original becomes '+ a);
+index = a.indexOf(element);
+
+} while(index!=-1 && a[index] != null);
+if (element != null) {b.push(element)}
+}
+
+console.log(b)
+</script>    
+
+    
