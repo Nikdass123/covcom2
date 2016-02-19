@@ -40,19 +40,59 @@ ctype html>
 			var count = 0;
 			var message = "You clicked me ";
 			var div = document.getElementById("message");
-
 			var button = document.getElementById("clickme");
 			button.onclick = function() {
 				count++;
 				div.innerHTML = message + count + " times!";
 			};
 		};
+		
+			window.onload = function() {
+			var count = 0;
+			var message = "You clicked me ";
+			var div = document.getElementById("message")
+			var button = document.getElementById("-")
+			button.onclick = function() {
+				--count;
+				div.innerHTML = message + count + " times!";
+			};
+		};
+		
+			window.onload = function() {
+			var count = 0;
+			var message = "You clicked me ";
+			var div = document.getElementById("message")
+			var button = document.getElementById("+")
+			button.onclick = function() {
+			    count++;
+				div.innerHTML = message + count + " times!";
+			};
+		};
+		
+		window.onload = function() {
+			var count = 0;
+			var message = "You clicked me ";
+			var div = document.getElementById("message")
+			var button = document.getElementById("0")
+			button.onclick = function() {
+			    null;
+				div.innerHTML = message + count + " times!";
+			};
+		};
+		
+		
+		
+	
 	</script>
 </head>
 
 <body>
 	<button id="clickme">Click me!</button>
 	<div id="message"></div>
+	<button id="-">-</button>
+	<button id="0">0</button>
+	<button id="+">+</button>
+	
 </body>
 
 </html>
