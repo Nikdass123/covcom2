@@ -41,48 +41,14 @@ ctype html>
 			var message = "You clicked me ";
 			var div = document.getElementById("message");
 			var button = document.getElementById("clickme");
+			var button = document.getElementById("-")
+			var button = document.getElementById("+")
+			var button = document.getElementById("0")
 			button.onclick = function() {
 				count++;
 				div.innerHTML = message + count + " times!";
 			};
 		};
-		
-			window.onload = function() {
-			var count = 0;
-			var message = "You clicked me ";
-			var div = document.getElementById("message")
-			var button = document.getElementById("-")
-			button.onclick = function() {
-				--count;
-				div.innerHTML = message + count + " times!";
-			};
-		};
-		
-			window.onload = function() {
-			var count = 0;
-			var message = "You clicked me ";
-			var div = document.getElementById("message")
-			var button = document.getElementById("+")
-			button.onclick = function() {
-			    count++;
-				div.innerHTML = message + count + " times!";
-			};
-		};
-		
-		window.onload = function() {
-			var count = 0;
-			var message = "You clicked me ";
-			var div = document.getElementById("message")
-			var button = document.getElementById("0")
-			button.onclick = function() {
-			    null;
-				div.innerHTML = message + count + " times!";
-			};
-		};
-		
-		
-		
-	
 	</script>
 </head>
 

@@ -3,12 +3,11 @@
 console.log(document);
 
 document.getElementById('save').onclick = save;
-document.querySelector('#userForm input[type="email"]').onkeypress = function() {
+document.querySelector('#userForm input[type="email"]').onkeyup = function() {
 	console.log('updating email');
 	var email = document.querySelector('#userForm input[type="email"]').value;
 	document.querySelector('#summary p').innerHTML = email;
 };
-
 
 function save() {
 	console.log('save');

@@ -4,12 +4,14 @@
   <meta charset="utf-8">
   <title>Map Coordinates</title>
   <script>
+  
 	window.onload = init;
 	function init() {
 		var map = document.getElementById("map");
 		map.onmousemove = showCoords;
 		var mydiv = document.getElementById("mydiv");
 		mydiv.onclick = addtext;
+		addtext()
 	}
 	
 	function showCoords(eventObj) {
@@ -18,16 +20,23 @@
 		var y = eventObj.clientY;
 		coords.innerHTML = "Map coordinates: " + x + ", " + y;
 	}
-
+	
 	function addtext(){
-		if (document.createTextNode){
-			var textToAdd = " Div was clicked! "
-			var newNode = document.createTextNode(textToAdd);
-			document.getElementById("mydiv").appendChild(newNode);
-		} else {
-			alert("Looks like you have an old browser!");
-		}
-	}
+    var data = ['I am a DIV!Click me.']
+    console.log(data);
+    var ulEle = document.createElement('ul');
+    for (var i = 0; i< data.length; i++){
+    var liEle = document.createElement('li');
+   var txtEle = document.createTextNode(data[i]);
+   liEle.appendChild(txtEle);
+   console.log(liEle);
+
+   ulEle.appendChild(liEle);
+   console.log(ulEle);
+   }
+  document.body.appendChild(ulEle);
+  }	
+  
   </script>
 </head>
 <body>
